@@ -90,6 +90,7 @@
         <!--################START HERE################-->
 
         <!--! BUTTONS -->
+        <h2 class="font-weight-bold">btn btn-(colors)</h2>
         <button class="btn btn-primary" type="button">Primary</button>
         <button class="btn btn-secondary"type="button">Secondary</button>
         <button class="btn btn-success"type="button">Success</button>
@@ -104,6 +105,7 @@
         <br>
 
         <!--! BUTTON TAGS/TYPES -->
+        <h2 class="font-weight-bold">btn Tags/Types type="button/submir/reset"</h2>
         <a class="btn btn-primary" href="#" role="button">Link</a>
         <button class="btn btn-success "type="submit">Button(type="submit")</button>
         <input class="btn btn-light" type="button" value="input">
@@ -114,6 +116,7 @@
         <br>
 
         <!--! OUTLINE BUTTONS НА HOVER ИМАТ ДОЛНИТЕ ЦВЕТОВЕ И BORDER-->
+        <h2 class="font-weight-bold">btn btn-outline-(colors-here)</h2>
         <button class="btn btn-outline-primary" type="button">Primary Outline</button>
         <button class="btn btn-outline-secondary" type="button">Secondary Outline</button>
         <button class="btn btn-outline-success" type="button">Success Outline</button>
@@ -127,11 +130,13 @@
         <br>
 
         <!-- BUTTON SIZES -->
+        <h2 class="font-weight-bold">btn btn-lg, btn-sm</h2>
         <button class="btn btn-primary btn-lg" type="button">
             <i class="fa fa-user"></i> Large button</button>
         <button class="btn btn-success btn-sm" type="button">Small button</button>
         <br>
         <br>
+        <h2 class="font-weight-bold">btn btn-dark btn-block</h2>
         <button class="btn btn-dark btn-block" type="button">Block level button</button>
 
         <br>
@@ -150,6 +155,7 @@
         <br>
 
         <!-- BUTTON GROUPS -->
+        <h2 class="font-weight-bold">btn-group</h2>
         <div class="btn-group">
             <button class="btn btn-primary"button">Left</button>
             <button class="btn btn-secondary"button">Middle</button>
@@ -159,19 +165,20 @@
         <br></br>
 
         <!-- BUTTON TOOLBAR -->
-        <div>
-            <div>
-                <button type="button">2</button>
-                <button type="button">3</button>
-                <button type="button">4</button>
+        <h2 class="font-weight-bold">btn-toolbar + btn-group</h2>
+        <div class="btn-toolbar">
+            <div class="btn-group mr-2">
+                <button class="btn btn-primary" type="button">2</button>
+                <button class="btn btn-primary" type="button">3</button>
+                <button class="btn btn-primary" type="button">4</button>
             </div>
-            <div>
-                <button type="button">5</button>
-                <button type="button">6</button>
-                <button type="button">7</button>
+            <div class="btn-group mr-2">
+                <button class="btn btn-primary" type="button">5</button>
+                <button class="btn btn-primary" type="button">6</button>
+                <button class="btn btn-primary" type="button">7</button>
             </div>
-            <div>
-                <button type="button">8</button>
+            <div class="btn-group">
+                <button class="btn btn-primary" type="button">8</button>
             </div>
         </div>
 
@@ -179,24 +186,28 @@
         <br>
 
         <!-- VERTICAL GROUP -->
-        <div>
-            <button type="button">Left</button>
-            <button type="button">Middle</button>
-            <button type="button">Right</button>
+        <h2 class="font-weight-bold">btn-group-vertical</h2>
+        <div class="btn-group-vertical">
+            <button class="btn btn-primary" type="button">Top</button>
+            <button class="btn btn-primary" type="button">Middle</button>
+            <button class="btn btn-primary" type="button">Bottom</button>
         </div>
 
         <br>
         <br>
 
         <!-- BUTTON DROPDOWNS -->
-        <div>
-            <button type="button">
+        <h5 class="font-weight-bold">|parent container| div class="dropdown")> |butoon container| div class="btn btn-primary dropdown-toogle" + |links container| div class="dropdown-menu" > a class="dropdown-item" *5  </h5>
+        <div class="dropdown">
+            <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
                 My Dropdown
             </button>
-            <div>
-                <a href="#">Link One</a>
-                <a href="#">Link Two</a>
-                <a href="#">Link Three</a>
+            <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Link One</a>
+                <a class="dropdown-item" href="#">Link Two</a>
+                <a class="dropdown-item" href="#">Link Three</a>
+                <a class="dropdown-item" href="#">Link Four</a>
+                <a class="dropdown-item" href="#">Link Five</a>
             </div>
         </div>
 
@@ -204,17 +215,21 @@
         <br>
 
         <!-- SPLIT DROPDOWNS -->
-        <div>
-            <button type="button">My Button</button>
-            <button type="button">
-                <span>Toggle Dropdown</span>
+        <h5 class="font-weight-bold">container=.btn-group + btn-1 btn-2=.dropdown-toggle + .dropdown-menu > a.dropdown-item*5 with 2 .dropdown-divider</h5>
+        <div class="btn-group">
+            <button class="btn btn-primary" type="button">My Button</button>
+            
+            <button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown">
+                <span>.dropdown-toggle</span>
             </button>
-            <div>
-                <a href="#">Link One</a>
-                <a href="#">Link Two</a>
-                <a href="#">Link Three</a>
-                <div></div>
-                <a href="#">Link Four</a>
+            <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Link One</a>
+                <a class="dropdown-item" href="#">Link Two</a>
+                <a class="dropdown-item" href="#">Link Three</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">dropdown-divider-1</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">dropdown-divider-2</a>
             </div>
         </div>
 
