@@ -87,77 +87,116 @@
     <div class="container">
         <!--################START HERE##################-->
 
-        <!-- LIST GROUP -->
-        <ul>
-            <li>My List Item One</li>
-            <li>My List Item Two</li>
-            <li>My List Item Three</li>
-            <li>My List Item Four</li>
-            <li>My List Item Five</li>
+        <!--! LIST GROUP -->
+        <ul class="list-group mb-5">
+            <li class="list-group-item">My List Item One</li>
+            <li class="list-group-item active">My List Item Two</li>
+            <li class="list-group-item">My List Item Three</li>
+            <li class="list-group-item">My List Item Four</li>
+            <li class="list-group-item">My List Item Five</li>
+            <pre class="font-weight-bold mt-4">
+                ul .list-group {
+                    display: flex;
+                    flex-direction: column;
+                    padding-left: 0;
+                    margin-bottom: 0;
+                }
+                
+
+                li .list-group-item {
+                    position: relative;
+                    display: block;
+                    padding: .75rem 1.25rem;
+                    margin-bottom: -1px;
+                    background-color: #fff;
+                    border: 1px solid rgba(0,0,0,.125);
+                }
+
+                
+                .list-group-item:first-child {
+                    border-top-left-radius: .25rem;
+                    border-top-right-radius: .25rem;
+                }
+            </pre>
         </ul>
 
-        <!-- LIST GROUP WITH LINKS -->
-        <ul>
-            <a href="#">My List Item One</a>
-            <a href="#">My List Item Two</a>
-            <a href="#">My List Item Three</a>
-            <a href="#">My List Item Four</a>
-            <a href="#">My List Item Five</a>
+        <!--! LIST GROUP WITH LINKS -->
+        <ul class="list-group mb-5">
+            <a class="list-group-item" href="#">My List Item One</a>
+            <a class="list-group-item" href="#">My List Item Two</a>
+            <a class="list-group-item active" href="#">My List Item Three</a>
+            <a class="list-group-item" href="#">My List Item Four</a>
+            <a class="list-group-item" href="#">My List Item Five</a>
         </ul>
 
 
-        <!-- CONTEXTUAL CLASSES -->
-        <ul>
-            <li>Regular List Item</li>
-            <li>Primary List Item</li>
-            <li>Secondary List Item</li>
-            <li>Success List Item</li>
-            <li>Info List Item</li>
-            <li>Warning List Item</li>
-            <li>Danger List Item</li>
-            <li>Light List Item</li>
-            <li>Dark List Item</li>
+        <!--! CONTEXTUAL CLASSES -->
+        <ul class="list-group mb-5">
+            <li class="list-group-item">Regular List Item</li>
+            <li class="list-group-item list-group-item-primary">Primary List Item &lt;li class="list-group-item list-group-item-primary"&gt;</li>
+            <li class="list-group-item list-group-item-secondary">Secondary List Item</li>
+            <li class="list-group-item list-group-item-success">Success List Item</li>
+            <li class="list-group-item list-group-item-info">Info List Item</li>
+            <li class="list-group-item list-group-item-warning">Warning List Item</li>
+            <li class="list-group-item list-group-item-danger">Danger List Item</li>
+            <li class="list-group-item list-group-item-light">Light List Item</li>
+            <li class="list-group-item list-group-item-dark">Dark List Item</li>
         </ul>
 
-        <!-- FLUSH LIST GROUP -->
-        <ul>
-            <li>My List Item One</li>
-            <li>My List Item Two</li>
-            <li>My List Item Three</li>
-            <li>My List Item Four</li>
-            <li>My List Item Five</li>
+        <!--! FLUSH LIST GROUP -->
+        <ul class="list-group list-group-flush mb-5">
+            <li class="list-group-item font-weight-bold">&lt;ul class="list-group list-group-flush mb-5">/ul&gt; всички li-та имат клас list-group-item</li>
+            <li class="list-group-item">My List Item One</li>
+            <li class="list-group-item">My List Item Two</li>
+            <li class="list-group-item">My List Item Three</li>
+            <li class="list-group-item active">My List Item Four</li>
+            <li class="list-group-item">My List Item Five</li>
         </ul>
 
 
-        <!-- BADGE -->
-        <ul>
-            <li>My List Item One</li>
-            <li>My List Item Two</li>
-            <li>My List Item Three</li>
-            <li>My List Item Four</li>
-            <li>My List Item Five</li>
+        <!--! BADGE -->
+        <ul class="list-group mb-5">
+            <li class="list-group-item">My List Item One</li>
+            <li class="list-group-item d-flex justify-content-between align-items-center font-weight-bold">
+                &lt;li class=&quot;list-group-item d-flex justify-content-between align-items-center&quot;&gt;
+                &lt;span class=&quot;badge badge-primary&quot;&gt;30&lt;/span&gt;
+                <span class="badge badge-primary">30</span>
+            </li>
+            <li class="list-group-item">My List Item Three</li>
+            <li class="list-group-item">My List Item Four</li>
+            <li class="list-group-item">My List Item Five</li>
         </ul>
 
-        <!-- BREADCRUMB -->
-        <ol>
-            <li>Home</li>
+        <!--! BREADCRUMB -->
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item">Home</li>
         </ol>
-        <ol>
-            <li>
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item">
                 <a href="#">Home</a>
             </li>
-            <li>Users</li>
+            <li class="breadcrumb-item">Users</li>
         </ol>
-        <ol>
-            <li>
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item">
                 <a href="#">Home</a>
             </li>
-            <li>
+            <li class="breadcrumb-item">
                 <a href="#">Users</a>
             </li>
-            <li>Brad</li>
+            <li class="breadcrumb-item">Brad</li>
         </ol>
-
+        <pre class="font-weight-bold">
+        &lt;ol class=&quot;breadcrumb&quot;&gt;
+            &lt;li class=&quot;breadcrumb-item&quot;&gt;
+                &lt;a href=&quot;#&quot;&gt;Home&lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li class=&quot;breadcrumb-item&quot;&gt;
+                &lt;a href=&quot;#&quot;&gt;Users&lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li class=&quot;breadcrumb-item&quot;&gt;Brad&lt;/li&gt;
+        &lt;/ol&gt;
+        </pre>
     </div>
     <!-- ./container -->
     <div style="margin-top:500px;"></div>
