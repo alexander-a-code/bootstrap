@@ -103,24 +103,7 @@
                 <span class="input-group-text bg-warning">@something.com</span>
             </div>
         </div>
-        <pre>
-        &lt;div class=&quot;input-group mb-3&quot;&gt;
-            &lt;div class=&quot;input-group-prepend&quot;&gt; 
-                &lt;span class=&quot;input-group-text bg-warning&quot;&gt;@&lt;/span&gt;
-            &lt;/div&gt;
-            &lt;input class=&quot;form-control&quot; type=&quot;text&quot; placeholder=&quot;Username&quot;&gt;
-        &lt;/div&gt;
-        
-        &lt;br&gt;
-
-        &lt;div class=&quot;input-group mb-3&quot;&gt;
-            &lt;input class=&quot;form-control&quot; type=&quot;text&quot; placeholder=&quot;Username&quot;&gt;
-            &lt;div class=&quot;input-group-append&quot;&gt;
-                &lt;span class=&quot;input-group-text bg-warning&quot;&gt;@something.com&lt;/span&gt;
-            &lt;/div&gt;
-        &lt;/div&gt;
-        </pre>
-
+    
         <br>
 
         <label for="basic-url">Custom URL</label>
@@ -142,7 +125,7 @@
                 <span class="input-group-text">.00</span>
             </div>
         </div>
-
+     
         <br>
 
         <!--! CHECKBOX -->
@@ -170,23 +153,36 @@
         <br>
 
         <!--! MULTIPLE INPUTS -->
-        <div>
-            <div>
-                <span id="">Name & Email</span>
+        <div class="input-group">
+            <div class="input-group-prepend">
+                <span class="input-group-text" id="">Name & Email</span>
             </div>
-            <input type="text" placeholder="Full Name">
-            <input type="email" placeholder="Email">
+            <input class="form-control" type="text" placeholder="Full Name">
+            <input class="form-control" type="email" placeholder="Email">
         </div>
 
         <br>
 
         <!--! BUTTON ADDONS -->
-        <div>
-            <input type="text" placeholder="Find By Name...">
-            <div>
-                <button type="button">Search</button>
+        <div class="input-group mb-3">
+            <input class="form-control" type="text" placeholder="Find By Name...">
+            <div class="input-group-append">
+                <button class="btn btn-outline-secondary" type="button">Search</button>
             </div>
         </div>
+
+        <pre class="font-weight-bold">
+            <h3>Example below > The whole Page is about Input groups& Prepend/Append</h3>
+            &lt;div class=&quot;input-group mb-3&quot;&gt;
+                &lt;div class=&quot;input-group-prepend&quot;&gt;
+                    &lt;span class=&quot;input-group-text&quot;&gt;$&lt;/span&gt;
+                &lt;/div&gt;
+                &lt;input class=&quot;form-control&quot; type=&quot;text&quot;&gt;
+                &lt;div class=&quot;input-group-append&quot;&gt;
+                    &lt;span class=&quot;input-group-text&quot;&gt;.00&lt;/span&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        </pre>
 
     </div>
     <!-- ./container -->
