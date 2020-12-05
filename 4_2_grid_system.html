@@ -90,18 +90,18 @@
     <!--! RESPONSIVE GRID -->
     <div class="row">
       <div class="col-sm-6  col-md-8 col-9-lg col-xl-10" style="border:1px solid #333">
-        <ul class="font-weight-bold">
+        <ul>
           <li>div.row display-flex flex-wrap: wrap; margin-right: -15px; margin-left: -15px;</li>
           <li>6 column on small screens flex: 0 0 50%; max-width: 50%;</li>
           <li>8 column on medium screen</li>
-          <li>9 column on large screen</li>
+          <li class="font-weight-bold">col-sm-6  col-md-8 col-9-lg col-xl-10</li>
           <li>10 column on xlarge screen</li>
         </ul>
       </div>
       <div class="col-sm-6 col-md-4 col-3-lg col-xl-2" style="border:1px solid #333">
         <ul>
           <li>6 column on small screens</li>
-          <li>4 column on medium screen</li>
+          <li class="font-weight-bold">col-sm-6 col-md-4 col-3-lg col-xl-2</li>
           <li>3 column on large screen</li>
           <li>2 column on xlarge screen</li>
         </ul>
@@ -111,66 +111,66 @@
     <!--! EQUAL WIDTH -->
     <div class="row">
       <div  class="col" style="border:1px solid #333">.col flex-basis: 0; flex-grow: 1; max-width: 100%;</div>
-      <div  class="col" style="border:1px solid #333">Equal Width</div>
+      <div  class="col font-weight-bold" style="border:1px solid #333">.col Equal Width</div>
       <div  class="col" style="border:1px solid #333">Equal Width</div>
       <div  class="col" style="border:1px solid #333">Equal Width</div>
     </div>
 
     <!--! EQUAL WIDTH MULTI ROW -->
     <div class="row">
-      <div class="col" style="border:1px solid #333">Equal Width Multi</div>
-      <div class="col" style="border:1px solid #333">Equal Width Multi</div>
+      <div class="col" style="border:1px solid #333">.col Equal Width Multi</div>
+      <div class="col" style="border:1px solid #333">.col Equal Width Multi</div>
       <div class="w-100 font-weight-bold"style="border:1px solid red">.w-100 will stay % no matter what</div>
-      <div class="col" style="border:1px solid #333">Equal Width Multi</div>
-      <div class="col" style="border:1px solid #333">Equal Width Multi</div>
+      <div class="col" style="border:1px solid #333">.col Equal Width Multi</div>
+      <div class="col" style="border:1px solid #333">.col Equal Width Multi</div>
     </div>
 
     <!--! AUTO LAYOUT -->
-    <div class="row bg-warning">
-      <div class="col" style="border:1px solid #333">Auto Layout</div>
-      <div class="col-6" style="border:1px solid #333">Auto Layout</div>
-      <div class="col-4" style="border:1px solid #333">Auto Layout</div>
+    <div class="row bg-warning font-weight-bold">
+      <div class="col" style="border:1px solid #333">.col Auto Layout</div>
+      <div class="col-6" style="border:1px solid #333">.col-6 Auto Layout</div>
+      <div class="col-4" style="border:1px solid #333">.col-4 Auto Layout</div>
     </div>
 
     <!--! EQUAL WIDTH STACKED -->
     <div class="row bg-success">
-      <div class="col-sm" style="border:1px solid #333">Equal Width Stack</div>
-      <div class="col-sm" style="border:1px solid #333">Equal Width Stack</div>
-      <div class="col-sm" style="border:1px solid #333">Equal Width Stack</div>
+      <div class="col-sm font-weight-bold" style="border:1px solid #333">.col-sm Equal Width Stack</div>
+      <div class="col-sm font-weight-bold" style="border:1px solid #333">.col-sm Equal Width Stack</div>
+      <div class="col-sm font-weight-bold" style="border:1px solid #333">.col-sm Equal Width Stack</div>
     </div>
 
     <!--! ORDERING -->
     <div class="row">
       <div class="col order-3"style="border:1px solid #333">
-        First
+        First .col .order-3
       </div>
       <div class="col order-2" style="border:1px solid #333">
-        Second
+        Second .col .order-2
       </div>
       <div class="col order-1" style="border:1px solid #333">
-        Third (ORDERING ex .order-3)
+        Third .col .order-3
       </div>
     </div>
 
     <!--! OFFSETTING -->
     <div class="row">
       <!--! 6 column div offset by 3 -->
-      <div class="col-md-6 offset-md-3 bg-primary" style="border:1px solid #333">.col-md-6 .offset-md-3 Good for login screens</div>
+      <div class="col-md-6 offset-md-3 bg-primary font-weight-bold" style="border:1px solid #333">.col-md-6 .offset-md-3 Good for login screens</div>
     </div>
     <div class="row">
       <!--! 2 4 column divs, the second offset by 4 -->
-      <div class="col-md-4" style="border:1px solid #333">.col-md-4</div>
-      <div class="col-md-4 offset-md-4" style="border:1px solid #333">.col-md-4 .offset-md-4 Move over 4</div>
+      <div class="col-md-4 font-weight-bold" style="border:1px solid #333">.col-md-4</div>
+      <div class="col-md-4 offset-md-4 font-weight-bold" style="border:1px solid #333">.col-md-4 .offset-md-4 Move over 4</div>
     </div>
 
     <div class="row">
       <!--! 2 3 column divs, both offset by 3 -->
-      <div class="col-md-3 offset-3 bg-danger"style="border:1px solid #333">.col-md-3 .offset-md-3</div>
-      <div class="col-md-3 offset-3 bg-danger" style="border:1px solid #333">.col-md-3 .offset-md-3</div>
+      <div class="col-md-3 offset-3 bg-danger font-weight-bold"style="border:1px solid #333">.col-md-3 .offset-md-3</div>
+      <div class="col-md-3 offset-3 bg-danger font-weight-bold" style="border:1px solid #333">.col-md-3 .offset-md-3</div>
     </div>
 
     <!--! NESTING -->
-    <div class="row">
+    <div class="row font-weight-bold">
       <div class="col-sm-9" style="border:1px solid blue">
         Level 1: .col-sm-9 div 9 Kолони parrent row
         <div class="row">
