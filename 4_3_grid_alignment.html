@@ -85,11 +85,14 @@
     </header>
 
     <div class="container">
-        <!--#####################START HERE######################-->
+        <!--!#####################START HERE######################-->
 
-        <!-- VERTICAL ALIGNMENT -->
+        <!--! VERTICAL ALIGNMENT -->
         <div class="container">
-            <div class="row" style="height:200px;border:1px #333 solid">
+            <div class="row align-items-start" style="height:200px;border:1px #333 solid">
+                <div class="col">
+                    4 divs with .col and parent div .container whre the class row there we put aligment .row align-items-start
+                </div>
                 <div class="col">
                     Top Aligned Text
                 </div>
@@ -100,26 +103,29 @@
                     Top Aligned Text
                 </div>
             </div>
-            <div class="row" style="height:200px;border:1px #333 solid">
+            <div class="row align-items-center font-weight-bold" style="height:200px;border:1px #333 solid">
                 <div class="col">
-                    Middle Aligned Text
+                    All divs are in FLEX container and we are aligning flex items<br>
+                    .row display: flex;
+                    <br>.align-items-center css>align-items: center;
+                    
                 </div>
                 <div class="col">
-                    Middle Aligned Text
+                    Middle Aligned Text added on parent div row align-items-center
                 </div>
                 <div class="col">
-                    Middle Aligned Text
+                    Middle Aligned Text added on parent div row align-items-center
                 </div>
             </div>
-            <div class="row" style="height:200px;border:1px #333 solid">
+            <div class="row align-items-end" style="height:200px;border:1px #333 solid">
                 <div class="col">
-                    Bottom Aligned Text
+                    Bottom Aligned Text row align-items-end
                 </div>
                 <div class="col">
-                    Bottom Aligned Text
+                    Bottom Aligned Text row align-items-end
                 </div>
                 <div class="col">
-                    Bottom Aligned Text
+                    Bottom Aligned Text row align-items-end
                 </div>
             </div>
         </div>
@@ -127,17 +133,17 @@
         <br>
         <br>
 
-        <!-- VERTICAL ALIGN INDIVIDUAL COLS -->
-        <div class="container">
+        <!--! VERTICAL ALIGN INDIVIDUAL COLS -->
+        <div class="container font-weight-bold">
             <div class="row" style="height:200px;border:1px #333 solid">
-                <div class="col">
-                    Top Aligned
+                <div class="col align-self-start">
+                    Top Aligned .col .align-self-start  Vertical Aligment is with align-self
                 </div>
-                <div class="col">
-                    Middle Aligned
+                <div class="col align-self-center">
+                    Middle Aligned .col .align-self-center
                 </div>
-                <div class="col">
-                    Bottom Aligned
+                <div class="col align-self-end">
+                    Bottom Aligned .col .align-seft-end
                 </div>
             </div>
         </div>
@@ -145,46 +151,46 @@
         <br>
         <br>
 
-        <!-- HORIZONTAL ALIGNED COLS -->
-        <div class="container">
-            <div class="row" style="height:200px;border:1px #333 solid">
+        <!--! HORIZONTAL ALIGNED COLS -->
+        <div class="container font-weight-bold">
+            <div class="row justify-content-start" style="height:200px;border:1px #333 solid">
+                <div class="col-4">
+                    Left Aligned Text HORIZONTAL ALIGMENT is with justify-content on row div ex > .row justify-content-start
+                </div>
                 <div class="col-4">
                     Left Aligned Text
                 </div>
-                <div class="col-4">
-                    Left Aligned Text
-                </div>
             </div>
-            <div class="row" style="height:200px;border:1px #333 solid">
+            <div class="row justify-content-center" style="height:200px;border:1px #333 solid">
                 <div class="col-4">
-                    Center Aligned Text
+                    Center Aligned Text .row .justify-content-center
                 </div>
                 <div class="col-4">
                     Center Aligned Text
                 </div>
             </div>
-            <div class="row" style="height:200px;border:1px #333 solid">
+            <div class="row justify-content-end" style="height:200px;border:1px #333 solid">
                 <div class="col-4">
-                    Right Aligned Text
+                    Right Aligned Text .row .justify-content-end
                 </div>
                 <div class="col-4">
-                    Right Aligned Text
-                </div>
-            </div>
-            <div class="row" style="height:200px;border:1px #333 solid">
-                <div class="col-4">
-                    Content Around
-                </div>
-                <div class="col-4">
-                    Content Around
+                    Right Aligned Text .row .justify-content-end
                 </div>
             </div>
-            <div class="row" style="height:200px;border:1px #333 solid">
+            <div class="row justify-content-around" style="height:200px;border:1px #333 solid">
                 <div class="col-4">
-                    Content Between
+                    Content Around .row .justify-content-around ADDS SPACE AROUND THE ELEMENT
                 </div>
                 <div class="col-4">
-                    Content Between
+                    Content Around .row .justify-content-around ADDS SPACE AROUND THE ELEMENT
+                </div>
+            </div>
+            <div class="row justify-content-between" style="height:200px;border:1px #333 solid">
+                <div class="col-4">
+                    Content Between .row .justify-content-between
+                </div>
+                <div class="col-4">
+                    Content Between .row .justify-content-between
                 </div>
             </div>
         </div>
@@ -192,12 +198,12 @@
         <br>
         <br>
 
-        <!-- COLUMN WRAPPING & NO GUTTERS-->
-        <div class="row">
+        <!--! COLUMN WRAPPING & NO GUTTERS-->
+        <div class="row no-gutters">
             <div class="col-9">
                 <div class="card">
                     <div class="card-block">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, repudiandae!</p>
+                        <p class="font-weight-bold">By Default there are spaces between columns so we add .no-gutters = no space on parent div .row container which cointains .col-9 .card .card-block And if the columns are over 12 columns It just wraps and goes around</p>
                     </div>
                 </div>
             </div>
