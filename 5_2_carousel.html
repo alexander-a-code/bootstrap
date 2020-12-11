@@ -211,8 +211,21 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
     crossorigin="anonymous"></script>
   <script>
+    $('.carousel').carousel({
+      interval: 3000,
+      keyboard: true,
+      pause: 'hover',
+      wrap: true
+    });
 
-  </script>
+    $('#slider4').on('slide.bs.carousel', function () {
+      console.log('EVENT START SOMETHING! slide');
+    });
+
+    $('.carousel').on('slide.bs.carousel', function (){
+      console.log('EVENT DO SOMETHING ELSE IF U WISH slid');
+    });
+</script>
 </body>
 
 </html>
