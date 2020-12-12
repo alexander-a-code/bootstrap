@@ -115,13 +115,26 @@
     <button class="btn btn-info" data-toggle="popover" data-placement="bottom" data-content="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum totam quaerat neque est ipsum eum." data-trigger="focus" id="hello">
       DISMISSIBLE POPOVER
     </button>
-
-    <hr>
+  <hr>
 
     <!--! CONTROL WITH JS -->
     <button class="btn btn-secondary" onclick="showPopover()">Show Popover</button>
     <button class="btn btn-secondary" onclick="hidePopover()">Hide Popover</button>
     <button class="btn btn-secondary" onclick="togglePopover()">Toggle Popover</button>
+    <br>
+<pre class="font-weight-bold mt-4">
+  &lt;button class=&quot;btn btn-info&quot; data-toggle=&quot;popover&quot; data-placement=&quot;bottom&quot; data-content=&quot;lorem text here&quot; data-trigger=&quot;focus&quot; id=&quot;hello&quot;&gt;
+  &lt;/button&gt;
+  &lt;onclick="showPopover()&gt;
+  <br>
+  function togglePopover() {
+    $('#hello').popover('toggle');
+  }
+<br>
+  $('#hello').on('show.bs.popover',  function() {
+    console.log('Popover SHOW');
+  });
+</pre>
   </div>
 
   <div style="margin-top:500px;"></div>
